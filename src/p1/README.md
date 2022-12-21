@@ -20,5 +20,7 @@ pub fn two_sum(nums: Vec<i32>, target: i32) -> Vec<i32> {
             return Vec::from([i as i32, *m.get(&c).unwrap()]);
         }
     }
-    unreachable!() // <-- Rust needs this because it can't know this is unreachable at compile time. We know the input is guaranteed to have a solution so we can assume this is safe.
+    unreachable!() /* <-- Rust needs this because it can't know this is unreachable at 
+    compile time. We know the input is guaranteed to have a solution so we can assume 
+    this is safe. */
 }
