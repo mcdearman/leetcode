@@ -20,8 +20,8 @@ pub fn add_two_numbers(
     let mut head = Box::new(ListNode::new(0));
     let mut cur = &mut head;
     let mut carry = 0;
-    let mut v1 = 0;
-    let mut v2 = 0;
+    let mut v1;
+    let mut v2;
 
     while l1.is_some() || l2.is_some() || carry != 0 {
         v1 = 0;
